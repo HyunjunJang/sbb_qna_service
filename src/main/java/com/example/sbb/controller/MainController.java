@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller //이 파일 컨트롤러야! 라는 뜻
 public class MainController {
     @RequestMapping("/sbb")
-    @ResponseBody //html에서 Body에 리턴값을 넣는다.
+    @ResponseBody //html에서 Body에 리턴값을 넣는다. 생략한다면 templates/index.html 을 찾는다
     public String index(){
-        return "안녕하세요";
+        return "index";
     }
 
     @GetMapping("/pag1")
